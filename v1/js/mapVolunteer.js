@@ -44,7 +44,6 @@ $(function(){
         setTimeout(function(){
             $.getJSON('../v1/data/poster.json',function(data){
                 postersData=data;
-                console.log(data);
                 for(var i=0;i<data.length;i++){
                     posters=data[i].posters;
                     for(var j=0;j<posters.length;j++){
