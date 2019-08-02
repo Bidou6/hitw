@@ -10,7 +10,7 @@ $(function(){
             $('#moreDetails').text(data[0].description);
             
          /**
-          * end
+          * @end
           */
          
     });
