@@ -1,14 +1,17 @@
 $(function(){
     $.getJSON('../v1/data/childs.json',function(data){
         /**
-         * @author : zaidun
+         * @zaidun
          */
             $('#childAge').text(data[0].age);
-            $('#childAge').text(data[0].age);
+            $('#childAge').text(data[0].lastname);
+            $('#childAge').text(data[0].firsname);
+            $('#childAge').text(data[0].picture);
+            $('#moreDetails').text(data[0].description);
             $('#childAge').text(data[0].age);
             }
          /**
-          * en
+          * end
           */
     });
 })
