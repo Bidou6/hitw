@@ -20,7 +20,7 @@ $(function(){
                 var lat=e.lngLat.lat;
                 var marker = new mapboxgl.Marker().setLngLat([lng, lat]).addTo(map);
                 postersData.push({
-                    "childConernedId":0,
+                    "childConcernedId":0,
                     "posters":[
                         {
                             "lng":lng,
@@ -48,7 +48,7 @@ $(function(){
                 for(var i=0;i<data.length;i++){
                     posters=data[i].posters;
                     for(var j=0;j<posters.length;j++){
-                        new mapboxgl.Marker().setLngLat([posters[i].lng, posters[i].lat]).addTo(map);
+                        new mapboxgl.Marker().setLngLat([posters[j].lng, posters[j].lat]).addTo(map);
                     }
                 }
             });
