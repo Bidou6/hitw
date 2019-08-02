@@ -6,7 +6,8 @@
         "description":"Cheveux bruns, t-shirt rayé",
         "age":5,
         "sex":"M",
-        "size":140
+        "size":140,
+        "weight":34
 
     },
     {
@@ -16,6 +17,7 @@
         "description":"Cheveux bruns, t-shirt rayé",
         "age":8,
         "sex":"F",
-        "size":135
+        "size":135,
+        "weight":34
     }
 ]
