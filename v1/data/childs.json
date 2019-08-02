@@ -2,7 +2,7 @@
     {
         "lastname":"Dupuis",
         "firsname":"Thomas",
-        "picture":"../img/thomas_dupuis.jpg",
+        "picture":"/img/thomas_dupuis.jpg",
         "description":"Cheveux bruns, t-shirt rayé",
         "age":5,
         "sex":"M"
