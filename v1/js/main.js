@@ -8,11 +8,11 @@ $(function(){
             $('#childAge').text(data[0].firsname);
             $('#childAge').text(data[0].picture);
             $('#moreDetails').text(data[0].description);
-            $('#childAge').text(data[0].age);
-            }
+            
          /**
           * end
           */
+         
     });
 })
 
