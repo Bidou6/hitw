@@ -3,12 +3,15 @@ $(function(){
         /**
          * @zaidun
          */
-            $('#childAge').text( data.age) ;
             $('#childFirstname').text(data[0].lastname);
             $('#childLastname').text(data[0].firsname);
-            $('#childAge').text(data[0].picture);
             $('#description').text(data[0].description);
-            $('#sex').text(data[0].sex);
+            $("#childPicture").attr("src",data[0].picture);
+
+            $('#childAge').text( data[0].age) ;
+            $('#childSex').text(data[0].sex);
+            $("#childHeight").text(data[0].size);
+            $("#childWeight").text(data[0].weight);
             
          /**
           * @end
