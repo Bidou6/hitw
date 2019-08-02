@@ -4,10 +4,11 @@ $(function(){
          * @zaidun
          */
             $('#childAge').text( data.age) ;
-            $('#childAge').text(data[0].lastname);
-            $('#childAge').text(data[0].firsname);
+            $('#childFirstname').text(data[0].lastname);
+            $('#childLastname').text(data[0].firsname);
             $('#childAge').text(data[0].picture);
-            $('#moreDetails').text(data[0].description);
+            $('#description').text(data[0].description);
+            $('#sex').text(data[0].sex);
             
          /**
           * @end
