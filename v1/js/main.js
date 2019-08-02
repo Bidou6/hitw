@@ -11,7 +11,7 @@ $(function(){
             $('#childAge').text( data[0].age) ;
             $('#childSex').text(data[0].sex);
             $("#childHeight").text(data[0].size);
-            $("#childWeight").text(data[0].weight);
+            $("#childWeight").text(data[0].weight); 
             
          /**
           * @end
