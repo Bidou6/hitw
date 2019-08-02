@@ -10,7 +10,7 @@
 
 /*Informations de connexion*/
 $host    = 'localhost';
-$dbname  = 'sirius_school';
+$dbname  = 'hitw';
 $charset = 'utf8';
 $dbuser  = 'root';
 $dbpwd   = '';
