@@ -1,0 +1,5 @@
+******************************2/8/2019**********************************
+* 3 nouvelles champs dans la table disparition  : lieu , yeux ,vetement*
+* le dossier includes contients deux fichiers  : cors , connexiondb    *
+* le dossier lidt_enfants_perdus qui affiche tous les enfants perdues  *
+************************************************************************
