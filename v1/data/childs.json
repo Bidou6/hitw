@@ -7,7 +7,8 @@
         "age":5,
         "sex":"M",
         "size":140,
-        "weight":34
+        "weight":34,
+        "place":"Ixelles"
 
     },
     {
@@ -18,6 +19,7 @@
         "age":8,
         "sex":"F",
         "size":135,
-        "weight":34
+        "weight":34,
+        "place":"Liège"
     }
 ]
