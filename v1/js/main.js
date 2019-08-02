@@ -3,7 +3,7 @@ $(function(){
         /**
          * @zaidun
          */
-            $('#childAge').text(data[0].age);
+            $('#childAge').text( data.age) ;
             $('#childAge').text(data[0].lastname);
             $('#childAge').text(data[0].firsname);
             $('#childAge').text(data[0].picture);
