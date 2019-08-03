@@ -2,7 +2,7 @@
     {
         "id":0,
         "lastname":"Dupuis",
-        "firsname":"Thomas",
+        "firstname":"Thomas",
         "picture":"./img/thomas_dupuis.jpg",
         "description":"Cheveux bruns, t-shirt rayé",
         "age":5,
@@ -15,7 +15,7 @@
     {
         "id":1,
         "lastname":"Dupont",
-        "firsname":"Laura",
+        "firstname":"Laura",
         "picture":"./img/laura_dupont.jpg",
         "description":"Cheveux bruns",
         "age":8,
@@ -27,7 +27,7 @@
     {
         "id":2,
         "lastname":"laurent",
-        "firsname":"loic",
+        "firstname":"loic",
         "picture":"./img/laurent_loic.jpg",
         "description":"Cheveux rouge",
         "age":5,

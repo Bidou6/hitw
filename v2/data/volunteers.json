@@ -3,5 +3,30 @@
         "firstname":"Georges",
         "lastname":"Legentil",
         "currentMissionId":-1
+    },
+    {
+        "firstname":"Boul",
+        "lastname":"Poule",
+        "currentMissionId":1
+    },
+    {
+        "firstname":"Florence",
+        "lastname":"Pomme",
+        "currentMissionId":2
+    },
+    {
+        "firstname":"Hakim",
+        "lastname":"Spouk",
+        "currentMissionId":-1
+    },
+    {
+        "firstname":"Myrtille",
+        "lastname":"Dupuis",
+        "currentMissionId":1
+    },
+    {
+        "firstname":"Jean",
+        "lastname":"Dupont",
+        "currentMissionId":-1
     }
 ]
