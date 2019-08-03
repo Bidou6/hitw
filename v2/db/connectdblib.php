@@ -50,3 +50,13 @@ function prep($sql,$bdd,$value,$pdoConst)
     $stmt->execute();
     return $stmt;
 }
+/* FONCTION INUTILE ET INCOMPLETE POUR LE MOMENT
+function update($nomchamp,$nomid,$valeur,$id,$nomtable)
+{
+    if(isset($_REQUEST["$nomid"],$_REQUEST["$nomchamp"]))
+{
+    $sql='UPDATE '.$nomtable.' SET lastname="'.$_REQUEST["lastname"].'" WHERE child_id='.$_REQUEST["child_id"];
+    $request= $bdd -> query($sql);
+}
+}
+*/
