@@ -1,0 +1,27 @@
+[
+    {
+        "id":0,
+        "lastname":"Dupuis",
+        "firsname":"Thomas",
+        "picture":"./img/thomas_dupuis.jpg",
+        "description":"Cheveux bruns, t-shirt rayé",
+        "age":5,
+        "sex":"M",
+        "size":140,
+        "weight":34,
+        "place":"Ixelles"
+
+    },
+    {
+        "id":1,
+        "lastname":"Dupont",
+        "firsname":"Laura",
+        "picture":"./img/laura_dupont.jpg",
+        "description":"Cheveux bruns",
+        "age":8,
+        "sex":"F",
+        "size":135,
+        "weight":34,
+        "place":"Liège"
+    }
+]
