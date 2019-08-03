@@ -35,11 +35,11 @@ $stmtnt->execute();
 // on vérifie si il y a des données de la requête SQL (1 seul résultat) 
 if($stmtnt && $stmtnt->rowCount() > 0)
 {
-    //on récuèpre le résultat et on le met sur la ligne
+    //on récuèpre le résultat et on le met sur la detail
     //on traite l'entrée du résultat de la requête
-    $ligne = $stmtnt->fetchAll(PDO::FETCH_ASSOC);
+    $detail = $stmtnt->fetchAll(PDO::FETCH_ASSOC);
     //on met le nom et le prenom dans $reponse["details"]
-    $reponse["details"] = $ligne;
+    $reponse["details"] = $detail;
     //on dit qu'il n'y a pas d'erreur
     $reponse["error"] = false;
     //on dit qu'il n'y a pas d'erreur donc pas de message d'erreur
