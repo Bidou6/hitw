@@ -11,6 +11,6 @@ $bdd=connectdb('hitw',true);
 $sql="SELECT * FROM missions";
 $request= $bdd -> query($sql);
 
-$row=$request->fetchall(PDO::FETCH_ASSOC);
+$data=$request->fetchall(PDO::FETCH_ASSOC);
 
-echo json_encode($row);
+echo json_encode($data);
