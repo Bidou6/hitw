@@ -7,11 +7,6 @@ cors();
 
 $bdd=connectdb('hitw',true);
 
-$sql="SELECT * FROM childs";
-$request= $bdd -> query($sql);
-
-$row=$request->fetch(PDO::FETCH_ASSOC);
-
 
 
 
