@@ -35,7 +35,7 @@ $stmtnt->execute();
 // on vérifie si il y a des données de la requête SQL (1 seul résultat) 
 
 /* on convertit en json le tableau $reponse et on l'affiche avec echo*/
-echo json_encode($stmtnt->fetchAll(PDO::FETCH_ASSOC));
+echo json_encode($stmtnt->fetchAll(PDO::FETCH_ASSOC), JSON_NUMERIC_CHECK);
 
 /*on termine le script*/
 die();
