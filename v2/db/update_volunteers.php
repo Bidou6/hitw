@@ -10,9 +10,9 @@ $bdd=connectdb('hitw',true);
 
 for ($i=0; $i < count($champs) ; $i++) 
 { 
-        if(isset($_REQUEST["id"],$_REQUEST[$champs[$i]]))
+        if(isset($_REQUEST["id_benevole"],$_REQUEST[$champs[$i]]))
     {
-        $sql='UPDATE missions SET '.$champs[$i].'="'.$_REQUEST[$champs[$i]].'" WHERE id='.$_REQUEST["id"];
+        $sql='UPDATE volunteers SET '.$champs[$i].'="'.$_REQUEST[$champs[$i]].'" WHERE id_benevole='.$_REQUEST["id_benevole"];
         $request= $bdd -> query($sql);
     }
 }
