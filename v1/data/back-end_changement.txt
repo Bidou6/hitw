@@ -24,3 +24,7 @@ parametre à essayer : details->0->status
 1- installer filleZilla et télécharger notre site web sur un serveur 
 2- utiliser la function email pour envoyer des alert aux benevoles par email 
 3- faire une page login 
+***************************************************
+soit benevole soit reponsable 
+comme benevole il faut choisir un mission 
+comme reponsable il faut gere les mission
