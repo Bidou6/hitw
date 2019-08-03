@@ -24,7 +24,7 @@ header('Content-Type: application/json');
 $reponse = [
     "error"         => true, /* indique si il y a une erreur ou non */
     "error_message" => "Uknown error", /* il indique le message d'erreur pour les front */
-    "status"          => "non" /* il sert à afficher se qu'on envoie aux front - les données de réponses */
+    "status"          => "" /* il sert à afficher se qu'on envoie aux front - les données de réponses */
 ];
 if(empty($_REQUEST["nomDeParametre1"]) || empty($_REQUEST["nomDeParametre2"]) || empty($_REQUEST["nomDeParametre3"]) 
 || empty($_REQUEST["nomDeParametre4"]) || empty($_REQUEST["nomDeParametre5"]))
@@ -35,13 +35,19 @@ if(empty($_REQUEST["nomDeParametre1"]) || empty($_REQUEST["nomDeParametre2"]) ||
 }
 if(!isset($_REQUEST["nomDeParametre1"],$_REQUEST["nomDeParametre2"],$_REQUEST["nomDeParametre3"],
 $_REQUEST["nomDeParametre4"],$_REQUEST["nomDeParametre5"]))
-//!is_numeric($_REQUEST["id_computers"]))
 {
     $response["error_message"] = "Erreur paramètre";
     echo json_encode($response);
     die();
 }
+//recuperer les params et les enregistrer dans des variables
+$nomDeParametre1 = $_REQUEST["nomDeParametre1"] ; 
+$nomDeParametre2 = $_REQUEST["nomDeParametre2"] ; 
+$nomDeParametre3 = $_REQUEST["nomDeParametre3"] ; 
+$nomDeParametre4 = $_REQUEST["nomDeParametre4"] ; 
+$nomDeParametre5 = $_REQUEST["nomDeParametre5"] ; 
 
+//requete sql
 $sql = "INSERT INTO 
     volunteers(lng , lat ,missionId,volunteerId,status)
     VALUES
