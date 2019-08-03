@@ -1,6 +1,15 @@
 body{
     margin:0;
     padding:0;
+    background-image: 
+    linear-gradient(
+  to right,
+  rgb(255, 255, 255  )20%,
+  rgb(255, 255, 255  )50%,
+  #0073FF 50%,
+  #0073FF 100%,
+  rgb(255, 255, 255  ) 100%
+);
 }
 
 #managerMap{
