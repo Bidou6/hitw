@@ -29,7 +29,7 @@ $reponse = [
 if(empty($_REQUEST["nomDeParametre1"]) || empty($_REQUEST["nomDeParametre2"]) || empty($_REQUEST["nomDeParametre3"]) 
 || empty($_REQUEST["nomDeParametre4"]) || empty($_REQUEST["nomDeParametre5"]))
 {
-    $response["error_message"] = "Erreur paramètre";
+    $response["error_message"] = "empty paramètre";
     echo json_encode($response);
     die();
 }
@@ -54,11 +54,11 @@ $sql = "INSERT INTO
     (:lng,:lat,:missionId,:volunteerId ,:status) ;";
 $stmtnt = $bdd->prepare($sql);
 
-$stmtnt->bindValue(":lng",,PDO::PARAM_STR);
-$stmtnt->bindValue(":lat",,PDO::PARAM_STR);
-$stmtnt->bindValue(":missionId",,PDO::PARAM_STR);
-$stmtnt->bindValue(":volunteerId",,PDO::PARAM_INT);
-$stmtnt->bindValue(":status",,PDO::PARAM_STR;
+$stmtnt->bindValue(":lng",$nomDeParametre1,PDO::PARAM_STR);
+$stmtnt->bindValue(":lat",$nomDeParametre2,PDO::PARAM_STR);
+$stmtnt->bindValue(":missionId",$nomDeParametre3,PDO::PARAM_STR);
+$stmtnt->bindValue(":volunteerId",$nomDeParametre4,PDO::PARAM_INT);
+$stmtnt->bindValue(":status",$nomDeParametre5,PDO::PARAM_STR;
 
 $stmtnt->execute();
 
