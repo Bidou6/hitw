@@ -2,13 +2,13 @@ var childs,missions,posters,volunteers;
 
 
 function loadDatas(cb){
-        $.getJSON('./data/childs.json',function(data){
+        $.get('./db/childs.php',function(data){
             childs=data;
-            $.getJSON('./data/missions.json',function(data){
+            $.get('./db/missions.php',function(data){
                 missions=data;
-                $.getJSON('./data/posters.json',function(data){
+                $.get('./db/posters.php',function(data){
                     posters=data;
-                    $.getJSON('./data/volunteers.json',function(data){
+                    $.get('./db/volunteers.php',function(data){
                         volunteers=data;
                         cb();
                     });
