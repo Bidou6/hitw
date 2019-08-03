@@ -52,3 +52,18 @@ function getFreeVolunteers(){
     }
     return freeVolunteers;
 }
+
+function setVolunteerMission(idVolunteer,idMission){
+    var i=0,done=false;
+    console.log(idVolunteer,idMission);
+    console.log(volunteers);
+    while(i<volunteers.length && !done){
+        if(volunteers[i].id===idVolunteer){
+            volunteers[i].currentMissionId=currentMissionId;
+            done=true;
+        }else{
+            i++;
+        }
+    }
+    console.log(volunteers);
+}
