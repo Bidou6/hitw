@@ -16,3 +16,31 @@ function loadDatas(cb){
             });
         });
 }
+
+function getDataById(json,id){
+    var i=0;
+    var data=null;
+    while(!data && i<json.length){
+        if(json[i].id===id){
+            data=json[i];
+        }
+        i++;
+    }
+    return data;
+}
+
+function getMissionById(id){
+    return getDataById(missions,id);
+}
+
+function getChildById(id){
+    return getDataById(childs,id);
+}
+
+function getPosterById(id){
+    return getDataById(posters,id);
+}
+
+function getVolunteersById(id){
+    return getDataById(volunteers,id);
+}
