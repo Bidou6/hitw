@@ -44,3 +44,11 @@ function getPosterById(id){
 function getVolunteersById(id){
     return getDataById(volunteers,id);
 }
+
+function getFreeVolunteers(){
+    var freeVolunteers=[];
+    for(var i=0;i<volunteers.length;i++){
+        if(volunteers[i].currentMissionId===-1)freeVolunteers.push(volunteers[i]);
+    }
+    return freeVolunteers;
+}
