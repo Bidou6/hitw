@@ -24,7 +24,7 @@ header('Content-Type: application/json');
 $reponse = [
     "error"         => true, /* indique si il y a une erreur ou non */
     "error_message" => "Uknown error", /* il indique le message d'erreur pour les front */
-    "data"          => "" /* il sert à afficher se qu'on envoie aux front - les données de réponses */
+    "details"          => "" /* il sert à afficher se qu'on envoie aux front - les données de réponses */
 ];
 
 $sql = "SELECT * FROM disparition;";
@@ -38,8 +38,8 @@ if($stmtnt && $stmtnt->rowCount() > 0)
     //on récuèpre le résultat et on le met sur la ligne
     //on traite l'entrée du résultat de la requête
     $ligne = $stmtnt->fetchAll(PDO::FETCH_ASSOC);
-    //on met le nom et le prenom dans $reponse["data"]
-    $reponse["data"] = $ligne;
+    //on met le nom et le prenom dans $reponse["details"]
+    $reponse["details"] = $ligne;
     //on dit qu'il n'y a pas d'erreur
     $reponse["error"] = false;
     //on dit qu'il n'y a pas d'erreur donc pas de message d'erreur

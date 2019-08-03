@@ -3,3 +3,15 @@
 * le dossier includes contients deux fichiers  : cors , connexiondb    *
 * le dossier lidt_enfants_perdus qui affiche tous les enfants perdues  *
 ************************************************************************
+lien vers front-end :  "10.20.3.53hitw\v1\data\pages\list_enfants_perdus.php"
+
+parametre à essayer : details->0->first_name
+parametre à essayer : details->0->last_name
+parametre à essayer : details->0->description
+parametre à essayer : details->0->age
+parametre à essayer : details->0->sex
+parametre à essayer : details->0->date_dispa
+parametre à essayer : details->0->lieu_de_disparition
+parametre à essayer : details->0->yeux
+parametre à essayer : details->0->vetements
+parametre à essayer : details->0->status
