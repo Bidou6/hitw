@@ -1,5 +1,5 @@
 <?php 
-//pour envoyer un mail aux utilisateurs 
+//pour envoyer un mail aux utilisateurs  ,  cette function ne fonctione pas sur localhost !
     $to      = 'nobody@example.com';
     $subject = 'the subject';
     $message = 'hello';
