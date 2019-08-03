@@ -2,8 +2,9 @@
 * 4 nouvelles champs dans la table disparition  : lieu , yeux ,vetement , status*
 * le dossier includes contients deux fichiers  : cors , connexiondb    *
 * le dossier pages contiens list_enfants_perdues  *
+* cree une page login.php (vide)
 ************************************************************************
-lien vers front-end :  "10.20.3.53hitw\v1\data\pages\list_enfants_perdus.php"
+lien pour front-end :  "10.20.3.53hitw\v1\data\pages\list_enfants_perdus.php"
 
 parametre à essayer : details->0->first_name
 parametre à essayer : details->0->last_name
