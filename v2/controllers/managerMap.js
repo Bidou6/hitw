@@ -4,13 +4,16 @@ function managerMapController(){
     initializeManagerMap();
     var freeVolunteers=getFreeVolunteers();
     for(var i=0;i<freeVolunteers.length;i++){
-        
         $("#freeVolunteers").append(freeVolunteers[i].firstname+" "+freeVolunteers[i].lastname+" <input type='checkbox' id='"+freeVolunteers[i].id+"' name='freeVolunteer' /><br>");
     }
 
     $("#btAttributeVolunteersToMission").on("click",function(){
         $("input:checkbox[name=freeVolunteer]:checked").each(function(){
-            console.log($(this));
+            setVolunteerMission($(this).attr('id'),currentMissionId);
+        });
+        $.post("./php/write.php",{
+            type:"writeVolunteers",
+            json:volunteers
         });
     });
 }

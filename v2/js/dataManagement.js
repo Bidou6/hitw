@@ -2,13 +2,13 @@ var childs,missions,posters,volunteers;
 
 
 function loadDatas(cb){
-        $.getJSON('./data/childs.json',function(data){
+        $.get('./db/childs.php',function(data){
             childs=data;
-            $.getJSON('./data/missions.json',function(data){
+            $.get('./db/missions.php',function(data){
                 missions=data;
-                $.getJSON('./data/posters.json',function(data){
+                $.get('./db/posters.php',function(data){
                     posters=data;
-                    $.getJSON('./data/volunteers.json',function(data){
+                    $.get('./db/volunteers.php',function(data){
                         volunteers=data;
                         cb();
                     });
@@ -51,4 +51,19 @@ function getFreeVolunteers(){
         if(volunteers[i].currentMissionId===-1)freeVolunteers.push(volunteers[i]);
     }
     return freeVolunteers;
+}
+
+function setVolunteerMission(idVolunteer,idMission){
+    var i=0,done=false;
+    console.log(idVolunteer,idMission);
+    console.log(volunteers);
+    while(i<volunteers.length && !done){
+        if(volunteers[i].id===idVolunteer){
+            volunteers[i].currentMissionId=currentMissionId;
+            done=true;
+        }else{
+            i++;
+        }
+    }
+    console.log(volunteers);
 }

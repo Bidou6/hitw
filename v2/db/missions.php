@@ -1,10 +1,16 @@
 <?php
 require("connectdblib.php");
 require("cors.php");
-
+header('Content-Type: application/json');
 cors();
 
-$bdd=connectdb("hitw",false,"10.20.3.53/phpmyadmin");
 
-var_dump($bdd);
 
+$bdd=connectdb('hitw',true);
+
+$sql="SELECT * FROM missions";
+$request= $bdd -> query($sql);
+
+$data=$request->fetchall(PDO::FETCH_ASSOC);
+
+echo json_encode($data);
