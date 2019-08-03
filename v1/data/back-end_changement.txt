@@ -3,7 +3,10 @@
 * le dossier includes contients deux fichiers  : cors , connexiondb    *
 * le dossier pages contiens list_enfants_perdues  *
 * cree une page login.php (vide)
+* ajouter un fichier PAS_IMPORTANT qui contients function pour enovoyer un mail ; 
+* 3 nouvelles champs dans la table benevole  (user_name 	email 	mot_de_passe) 
 ************************************************************************
+******************** front-end <-->back-end ***********************
 lien pour front-end :  "10.20.3.53hitw\v1\data\pages\list_enfants_perdus.php"
 
 parametre à essayer : details->0->first_name
@@ -16,3 +19,8 @@ parametre à essayer : details->0->lieu_de_disparition
 parametre à essayer : details->0->yeux
 parametre à essayer : details->0->vetements
 parametre à essayer : details->0->status
+***********************************************************
+****************à faire (back-end) ************************
+1- installer filleZilla et télécharger notre site web sur un serveur 
+2- utiliser la function email pour envoyer des alert aux benevoles par email 
+3- faire une page login 
