@@ -11,6 +11,6 @@ $bdd=connectdb('hitw',true);
 $sql="SELECT * FROM childs";
 $request= $bdd -> query($sql);
 
-$row=$request->fetch(PDO::FETCH_ASSOC);
+$row=$request->fetchAll(PDO::FETCH_ASSOC);
 
 echo json_encode($row);

@@ -11,6 +11,6 @@ $bdd=connectdb('hitw',true);
 $sql="SELECT * FROM posters";
 $request= $bdd -> query($sql);
 
-$row=$request->fetch(PDO::FETCH_ASSOC);
+$row=$request->fetchall(PDO::FETCH_ASSOC);
 
 echo json_encode($row);
