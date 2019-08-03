@@ -27,7 +27,7 @@ $reponse = [
     "details"          => "" /* il sert à afficher se qu'on envoie aux front - les données de réponses */
 ];
 
-$sql = "SELECT * FROM disparition;";
+$sql = "SELECT * FROM childs;";
 $stmtnt = $bdd->prepare($sql);
 $stmtnt->execute();
 
