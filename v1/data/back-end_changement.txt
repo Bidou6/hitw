@@ -1,7 +1,7 @@
 ******************************2/8/2019**********************************
-* 3 nouvelles champs dans la table disparition  : lieu , yeux ,vetement*
+* 4 nouvelles champs dans la table disparition  : lieu , yeux ,vetement , status*
 * le dossier includes contients deux fichiers  : cors , connexiondb    *
-* le dossier lidt_enfants_perdus qui affiche tous les enfants perdues  *
+* le dossier pages contiens list_enfants_perdues  *
 ************************************************************************
 lien vers front-end :  "10.20.3.53hitw\v1\data\pages\list_enfants_perdus.php"
 
