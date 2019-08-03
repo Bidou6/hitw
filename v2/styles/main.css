@@ -14,10 +14,12 @@ body{
 
 #managerMap{
     display: flex;
+    background-color:#0073FF; 
 }
 
 #volunteers{
     width:50vw;
+    background-color:#0073FF; 
 }
 
 #managerMapWrapper{
