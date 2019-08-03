@@ -2,7 +2,7 @@
     {
         "id":0,
         "lastname":"Dupuis",
-        "firstname":"Thomas",
+        "firsname":"Thomas",
         "picture":"./img/thomas_dupuis.jpg",
         "description":"Cheveux bruns, t-shirt rayé",
         "age":5,
@@ -15,7 +15,7 @@
     {
         "id":1,
         "lastname":"Dupont",
-        "firstname":"Laura",
+        "firsname":"Laura",
         "picture":"./img/laura_dupont.jpg",
         "description":"Cheveux bruns",
         "age":8,
@@ -23,5 +23,17 @@
         "size":135,
         "weight":34,
         "place":"Liège"
+    },
+    {
+        "id":2,
+        "lastname":"laurent",
+        "firsname":"loic",
+        "picture":"./img/laurent_loic.jpg",
+        "description":"Cheveux rouge",
+        "age":5,
+        "sex":"F",
+        "size":100,
+        "weight":25,
+        "place":"saint-nickolas"
     }
 ]
