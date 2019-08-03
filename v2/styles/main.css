@@ -1,0 +1,19 @@
+body{
+    margin:0;
+    padding:0;
+}
+
+#managerMap{
+    display: flex;
+}
+
+#volunteers{
+    width:50vw;
+}
+
+#managerMapWrapper{
+    position:absolute;
+    left:50vw;
+    width:50vw;
+    height:100vh;
+}
