@@ -13,4 +13,4 @@ $request= $bdd -> query($sql);
 
 $data=$request->fetchAll(PDO::FETCH_ASSOC);
 
-echo json_encode($data);
+echo json_encode($data, JSON_NUMERIC_CHECK);

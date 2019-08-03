@@ -11,10 +11,6 @@ function managerMapController(){
         $("input:checkbox[name=freeVolunteer]:checked").each(function(){
             setVolunteerMission($(this).attr('id'),currentMissionId);
         });
-        $.post("./php/write.php",{
-            type:"writeVolunteers",
-            json:volunteers
-        });
     });
 }
 

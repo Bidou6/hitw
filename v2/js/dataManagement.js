@@ -46,24 +46,33 @@ function getVolunteersById(id){
 }
 
 function getFreeVolunteers(){
+    console.log("freevolunteers");
+    console.log(volunteers);
     var freeVolunteers=[];
     for(var i=0;i<volunteers.length;i++){
+        console.log(volunteers[i]);
+        console.log(volunteers[i]);
         if(volunteers[i].currentMissionId===-1)freeVolunteers.push(volunteers[i]);
     }
+    console.log(freeVolunteers);
     return freeVolunteers;
 }
 
 function setVolunteerMission(idVolunteer,idMission){
-    var i=0,done=false;
-    console.log(idVolunteer,idMission);
-    console.log(volunteers);
-    while(i<volunteers.length && !done){
-        if(volunteers[i].id===idVolunteer){
-            volunteers[i].currentMissionId=currentMissionId;
-            done=true;
-        }else{
-            i++;
-        }
-    }
-    console.log(volunteers);
+    // var i=0,done=false;
+    // console.log(idVolunteer,idMission);
+    // console.log(volunteers);
+    // while(i<volunteers.length && !done){
+    //     if(volunteers[i].id===idVolunteer){
+    //         volunteers[i].currentMissionId=currentMissionId;
+    //         done=true;
+    //     }else{
+    //         i++;
+    //     }
+    // }
+    // console.log(volunteers);
+    $.post("./db/update_volunteers.php",{
+        volunteerId:idVolunteer,
+        currentMissionId:idMission
+    })
 }
