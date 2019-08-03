@@ -6,7 +6,7 @@ cors();
 
 
 
-$bdd=connectdb('hitw',true,"10.20.3.53");
+$bdd=connectdb('hitw',true);
 
 $sql="SELECT * FROM missions";
 $request= $bdd -> query($sql);
