@@ -8,7 +8,7 @@ cors();
 
 /* connexion à la db */
 require "./connectdblib.php";
-
+$bdd  = connectdb("hitw" , false );
 /* on a ajouté le type du fichier */
 header('Content-Type: application/json');
 
@@ -26,7 +26,6 @@ $reponse = [
     "error_message" => "Uknown error", /* il indique le message d'erreur pour les front */
     "details"          => "" /* il sert à afficher se qu'on envoie aux front - les données de réponses */
 ];
-var_dump($bdd);
 
 $sql = "SELECT * FROM volunteers;";
 $stmtnt = $bdd->prepare($sql);
