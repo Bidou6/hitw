@@ -33,6 +33,10 @@ linear-gradient(
 );
 };
 
+.mapboxgl-map{
 
+  position: absolute;
+  float:center;
+}
 
 /*jeremy fin*/
