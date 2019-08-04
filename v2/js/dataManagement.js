@@ -46,15 +46,10 @@ function getVolunteersById(id){
 }
 
 function getFreeVolunteers(){
-    console.log("freevolunteers");
-    console.log(volunteers);
     var freeVolunteers=[];
     for(var i=0;i<volunteers.length;i++){
-        console.log(volunteers[i]);
-        console.log(volunteers[i]);
         if(volunteers[i].currentMissionId===-1)freeVolunteers.push(volunteers[i]);
     }
-    console.log(freeVolunteers);
     return freeVolunteers;
 }
 
@@ -71,8 +66,9 @@ function setVolunteerMission(idVolunteer,idMission){
     //     }
     // }
     // console.log(volunteers);
+    console.log(idVolunteer,idMission);
     $.post("./db/update_volunteers.php",{
-        volunteerId:idVolunteer,
+        id_benevole:idVolunteer,
         currentMissionId:idMission
     })
 }

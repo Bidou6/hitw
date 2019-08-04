@@ -4,11 +4,12 @@ function managerMapController(){
     initializeManagerMap();
     var freeVolunteers=getFreeVolunteers();
     for(var i=0;i<freeVolunteers.length;i++){
-        $("#freeVolunteers").append(freeVolunteers[i].firstname+" "+freeVolunteers[i].lastname+" <input type='checkbox' id='"+freeVolunteers[i].id+"' name='freeVolunteer' /><br>");
+        $("#freeVolunteers").append(freeVolunteers[i].firstname+" "+freeVolunteers[i].lastname+" <input type='checkbox' id='"+freeVolunteers[i].volunteerId+"' name='freeVolunteer' /><br>");
     }
 
     $("#btAttributeVolunteersToMission").on("click",function(){
         $("input:checkbox[name=freeVolunteer]:checked").each(function(){
+            console.log($(this).attr('id'));
             setVolunteerMission($(this).attr('id'),currentMissionId);
         });
     });
